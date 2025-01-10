@@ -1,4 +1,4 @@
-use std::io::{stdin,stdout,Write};
+use std::io::{ stdin, stdout, Write };
 use regex::Regex;
 
 pub struct PasswordStrength {
@@ -10,7 +10,7 @@ fn main() {
     let mut input = String::new();
     print!("Enter the password: ");
 
-    let _=stdout().flush();
+    let _ = stdout().flush();
     stdin().read_line(&mut input).expect("Did not enter a correct string");
 
     let password = input.trim();
